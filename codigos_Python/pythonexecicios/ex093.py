@@ -1,0 +1,17 @@
+jogad = dict()
+jogad['nome'] = str(input("nome do jogador: "))
+aprovei = list()
+tot = int(input("partidas jogadas: "))
+for c in range(tot):
+    aprovei.append(int(input(f"saldo de gols na partida {c+1}: ")))
+jogad['aproveitamento'] = aprovei.copy()
+jogad['total'] = sum(aprovei)
+print(jogad)
+print(25 * '-=')
+print(f"jogador: {jogad['nome']}")
+print(f"partidas jogadas: {len(jogad['aproveitamento'])}")
+print(f"saldo total de gols: {jogad['total']}")
+print(25 * "-=")
+print(f"O jogador {jogad['nome']} jogou {len(jogad['aproveitamento'])} partidas.")
+for c in enumerate(jogad['aproveitamento']):
+    print(f"    => saldo de gols na partida {c[0]+1}: {c[1]}")

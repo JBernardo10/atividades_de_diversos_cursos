@@ -1,0 +1,13 @@
+import turtle
+pen = turtle.Turtle()
+pen.color("red")
+pen.begin_fill()
+pen.pensize(3)
+pen.left(50)
+pen.forward(133)
+pen.circle(50, 200)
+pen.right(140)
+pen.circle(50, 200)
+pen.forward(133)
+pen.end_fill()
+pen.begin_fill()
